@@ -1,0 +1,59 @@
+*{outline:1px solid black}
+.circlespace{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	clear:both;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.75);
+	/*letter-spacing: 0.2em;*/
+	line-height: 1em;
+	font-weight: 10%;
+}
+#container{
+height:20em;
+	width:20em;
+	border: 1px solid black;
+	border-radius:50%;
+	background: url(kooza_24121891854-620x426.jpg) no-repeat center;
+	background-size: 30em auto;
+}
+.textline{	
+line-height:1em;
+clear:both;
+}
+
+#header {
+	background-color: #ccffcc;
+}
+
+.lline {
+	float:right;
+	width: 1em;
+/*	background-color: #A7DBD8;*/
+	margin: 0 0 0 0;
+}
+
+.rline {
+	width: 1em;
+/*	background-color: #E0E4CC;*/
+	float: left;
+	margin: 0 0 0 0;
+}
+
+.bline {
+	
+	height: 1em;
+/*	background-color: #E0E3ed;*/
+clear:left;
+	margin: 0 0 0 0;
+	float: left;
+}
+
+.dline {
+	
+	height: 1em;
+/*	background-color: #E0E3ed;*/
+clear:left;
+	margin: 0 0 0 0;
+	float: right;
+}
