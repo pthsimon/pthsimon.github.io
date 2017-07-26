@@ -1,1 +1,60 @@
-Hello World .. a second time.
+<!DOCTYPE html>
+<html>
+	<head>
+      <!-- <link type='text/css' rel='stylesheet' href='style.css'/> -->
+		<title>Simon on Github Pages</title>
+        <style>
+            #maincontainer{
+                width:960px
+                
+            }
+#container {
+   position: relative;
+}
+
+#bordCirc {
+   position: absolute;
+   width:25%;
+   z-index: -1; 
+   display:inline-block;
+  color:green;
+  border:7px solid black;
+  border-radius:90%;
+  overflow: auto;
+ /* background-image:url(http://estaticos01.marca.com/imagenes/2014/10/16/futbol/1413476115_extras_noticia_foton_7_1.jpg); */
+}
+
+#bordCirc::before{
+    float: left;
+    padding-bottom: 100%;
+    }
+    #bordCirc::after { 
+    }
+    .maintext{color:blueviolet;
+        z-index: -1;
+    }
+#top{
+    position:absoulute;
+    color:grey;
+    z-index: 1;
+    }
+    </style>
+	</head>
+	<body>
+	    <p id="top">Hello World .. a second time. This text is on top of everything
+            <br><br><br><br><br><br><br>
+            i hope...________!
+        </p>
+        
+        <div id="bordCirc">
+            <p>This div is<br> green inline-block
+            with  <br> 7px<br>solid circular border</p><p>with overflow <br> _______________
+            __________ <br> _________<br>__________</p><p>set  to <br> be on
+            auto<br> ______<br>__________</p>
+    </div>
+  <br />
+   <p class=maintext>This is outside the circle<br><br><br><br><br><br><br><br><br><br><br>and inside also inside the circle __________!</p>
+</div>
+	</body>
+</html>
+
