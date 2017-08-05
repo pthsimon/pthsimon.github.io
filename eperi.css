@@ -1,0 +1,67 @@
+:root{
+    --first-column-width:24%;
+    --second-column-width:300px;
+}
+* { 
+    outline: 1px solid black;
+    }
+.container{
+    border:1px solid black;
+    width:80%; 
+    height:2000px;
+    margin-right: 10%;
+    margin-left: 10%;
+	float:left;
+    
+}
+.central img {
+    width:100%;
+    
+   }
+div {
+   
+	border-radius: 5px;
+}
+
+#headerbar {
+	height: 50px;
+	background-color: #F38630;
+	margin-bottom: 10px;
+	position:fixed;
+	
+}
+
+.left {
+	
+	width: var(--first-column-width);
+	height:300px;
+	background-color: #A7DBD8;
+	float: left;
+	margin: 0 0.5% 0 0.5%;
+	
+}
+
+.right {
+	height: 300px;
+	width: 24%;
+	background-color: #E0E4CC;
+	float: left;
+	margin: 0 0.5% 0 0.5%;
+}
+
+.central{	
+    height:38%;
+	width:50%;
+	background-color: #ccffcc;
+/*	margin-left: var(--first-column-width);*/
+	float: left;
+	margin-bottom: 10px;
+}
+    
+
+#footer {
+	height: 50px;
+	background-color: #69D2E7;
+	/*Add your CSS here!*/
+clear: both;
+}
