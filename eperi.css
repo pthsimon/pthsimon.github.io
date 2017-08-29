@@ -1,67 +1,66 @@
 :root{
-    --first-column-width:24%;
-    --second-column-width:300px;
+    --outer-column-width:20%;
+	--second-column-width:350px;
+	
 }
-* { 
-    outline: 1px solid black;
-    }
 .container{
-    border:1px solid black;
-    width:80%; 
-    height:2000px;
-    margin-right: 10%;
-    margin-left: 10%;
-	float:left;
-    
+	width:100%; 
+	
+	display:inline-block;
+	
 }
 .central img {
-    width:100%;
-    
+    width:30%;
    }
-div {
-   
+div{  
 	border-radius: 5px;
 }
-
-#headerbar {
-	height: 50px;
-	background-color: #F38630;
-	margin-bottom: 10px;
-	position:fixed;
-	
-}
-
 .left {
-	
-	width: var(--first-column-width);
+	top:0;
+	width: var(--outer-column-width);
 	height:300px;
 	background-color: #A7DBD8;
-	float: left;
-	margin: 0 0.5% 0 0.5%;
+	display:inline-block;
+vertical-align:top;
 	
 }
-
 .right {
-	height: 300px;
-	width: 24%;
-	background-color: #E0E4CC;
-	float: left;
-	margin: 0 0.5% 0 0.5%;
-}
-
-.central{	
-    height:38%;
-	width:50%;
-	background-color: #ccffcc;
-/*	margin-left: var(--first-column-width);*/
-	float: left;
-	margin-bottom: 10px;
-}
-    
-
-#footer {
 	height: 50px;
+	width: var(--outer-column-width) ;
+	background-color: #E0E4CC;
+	display:inline-block;
+	vertical-align:top;
+}
+.central{	
+	width:40%;
+	background-color: #ccffcc;
+	/*margin-left: var(--outer-column-width);*/
+	display:inline-block;
+	vertical-align:top;
+}
+#headerbar {
+	background-color: rgba(255, 126, 194, 0.10);
+	position:fixed;
+	left: 0;
+	right:0;
+	
+	padding: 0.2em;
+	display:inline-block;
+}
+#footer {
+	height: 3em;
 	background-color: #69D2E7;
 	/*Add your CSS here!*/
-clear: both;
+	clear: both;
+}
+.rounder{
+	margin: 0.5%;
+}
+#frame{
+	display:inline-block;
+	background-color: rgba(255, 20, 145, 1);
+	color: white;
+	font-size: 1.5em;
+	padding: 0.2em;
+	border-radius: 10px;
 }
