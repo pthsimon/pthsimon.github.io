@@ -45,109 +45,115 @@ drift.load('wmmtiu84ehmu');
 	</head>
 	<body>
             <style>
-                    .custom-wrapper {
-                        background-color: gray 0.5;
-                        margin-bottom: 1em;
-                        -webkit-font-smoothing: antialiased;
-                        height: 2.1em;
-                        overflow: hidden;
-                        -webkit-transition: height 0.5s;
-                        -moz-transition: height 0.5s;
-                        -ms-transition: height 0.5s;
-                        transition: height 0.5s;
-                    }
-                    
-                    .custom-wrapper.open {
-                        height: 14em;
-                    }
-                    
-                    .custom-menu-3 {
-                        text-align: right;
-                    }
-                    
-                    .custom-toggle {
-                        width: 34px;
-                        height: 34px;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        display: none;
-                    }
-                    
-                    .custom-toggle .bar {
-                        background-color: greenyellow;
-                        display: block;
-                        width: 20px;
-                        height: 2px;
-                        border-radius: 100px;
-                        position: absolute;
-                        top: 18px;
-                        right: 7px;
-                        -webkit-transition: all 0.5s;
-                        -moz-transition: all 0.5s;
-                        -ms-transition: all 0.5s;
-                        transition: all 0.5s;
-                    }
-                    
-                    .custom-toggle .bar:first-child {
-                        -webkit-transform: translateY(-6px);
-                        -moz-transform: translateY(-6px);
-                        -ms-transform: translateY(-6px);
-                        transform: translateY(-6px);
-                    }
-                    
-                    .custom-toggle.x .bar {
-                        -webkit-transform: rotate(45deg);
-                        -moz-transform: rotate(45deg);
-                        -ms-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                    }
-                    
-                    .custom-toggle.x .bar:first-child {
-                        -webkit-transform: rotate(-45deg);
-                        -moz-transform: rotate(-45deg);
-                        -ms-transform: rotate(-45deg);
-                        transform: rotate(-45deg);
-                    }
-                    
-                    @media (max-width: 47.999em) {
-                    
-                        .custom-menu-3 {
-                            text-align: left;
-                        }
-                    
-                        .custom-toggle {
-                            display: block;
-                        }
-                    
-                    }
-                    </style>
-            <div class="custom-wrapper pure-g" id="menu">
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <div class="pure-menu">
-                            <a href="#" class="pure-menu-heading custom-brand">myDevFolio</a>
-                            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-                        </div>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <div class="pure-menu pure-menu-horizontal custom-can-transform">
-                            <ul class="pure-menu-list">
-                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bio</a></li>
-                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Snippets</a></li>
-                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">CV</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
-                            <ul class="pure-menu-list">
-                                <li class="pure-menu-item"><a href="https://www.linkedin.com/in/simon-cain-50002426/" class="pure-menu-link">LinkedIn</a></li>
-                                <li class="pure-menu-item"><a href="https://twitter.com/Simern" class="pure-menu-link">Twitter</a></li>
-                            </ul>
-                        </div>
-                    </div>
+      .custom-wrapper {
+          background-color: #ffd390;
+          margin-bottom: 1em;
+          -webkit-font-smoothing: antialiased;
+          height: 2.1em;
+          overflow: hidden;
+          -webkit-transition: height 0.5s;
+          -moz-transition: height 0.5s;
+          -ms-transition: height 0.5s;
+          transition: height 0.5s;
+      }
+      
+      .custom-wrapper.open {
+        height:18em;
+      }
+      
+      .custom-menu-3 {
+          text-align: right;
+      }
+      
+      .custom-toggle {
+          width: 34px;
+          height: 34px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: none;
+      }
+      
+      .custom-toggle .bar {
+          background-color: white;
+          display: block;
+          width: 20px;
+          height: 2px;
+          border-radius: 100px;
+          position: absolute;
+          top: 18px;
+          right: 7px;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          transition: all 0.5s;
+      }
+      
+      .custom-toggle .bar:first-child {
+          -webkit-transform: translateY(-6px);
+          -moz-transform: translateY(-6px);
+          -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+      }
+      
+      .custom-toggle.x .bar {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+      
+      .custom-toggle.x .bar:first-child {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+      }
+      
+      @media (max-width: 47.999em) {
+      
+          .custom-menu-3 {
+              text-align: center;
+              display: block;
+          }
+      
+          .custom-toggle {
+            display: inline-block;
+              text-align:center;
+          }
+      
+      }
+      </style>
+      
+      <div class="custom-wrapper pure-g" id="menu">
+            <div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-3">
+                <div class="pure-menu">
+                    <a href="#" class="pure-menu-heading custom-brand"><span class="rainbow">myDevFolio</span></a>
+                    <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
                 </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-1-3">
+                <div class="pure-menu pure-menu-horizontal custom-can-transform">
+                    <ul class="pure-menu-list">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bio</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Snippets</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-1-3">
+                    <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+                        <ul class="pure-menu-list">
+                                <li class="pure-menu-item"><a href="https://www.linkedin.com/in/simon-cain-50002426/" class="pure-menu-link">LinkedIn</a></li>
+                                <li class="pure-menu-item"><a href="https://twitter.com/Simern" target="_blank" class="pure-menu-link">Twitter</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div id="menu-pad-top"></div>
+    
+           
                 <script>
                 (function (window, document) {
                 var menu = document.getElementById('menu'),
@@ -201,28 +207,27 @@ drift.load('wmmtiu84ehmu');
     </ul>
 </div>
 -->
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/simon-cain-50002426" data-format="inline" data-related="false"></script>
+
 <div id="nearbottom" class="pure-g">
-        <div class="pure-u-1 pure-u-md-2-5 qbox">d<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <div class="pure-u-1 pure-u-md-2-5" id="bio-top"><div class="page-description">Hi there, I am Simon from Perth, Australia. Currently I am looking to take on small web projects or contracts. Ultimately I would like to work in an IT related field so get in contact if you have a vacancy. Feel free to comment on my design and give feedback on what you like(and more importantly...dislike) about the site.</div><script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
             <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/simon-cain-50002426" data-format="inline" data-related="false"></script>e</div>
         <div class="pure-u-1 pure-u-md-3-5 codebox">fg</div>
     </div>
 <div class="pure-g breaker">
         <div class="pure-u-1 pure-u-md-1-5"></div>
-        <div class="pure-u-1 pure-u-md-3-5"><p>Over the course of your career you may be presented with technical tests or questions
-                from employers. Tests are used by employers to guage whether you are suitable for a job.
-                 The following is a set of questions I was given while applying for a web development position. 
-                These are also a good way to learn some new technical skills/tricks that you might not have picked 
-                in formal education.
+        <div class="pure-u-1 pure-u-md-3-5 "><div class="page-description"><p>While applying for jobs you may be presented with technical tests or questions
+                from employers. These tests are used by employers to guage whether you are capable of performing common tasks required as part of the position. Or some times they are used simply as a bench mark.
+                  
+                Completing tests may feel like a waste of time while you are busy applying for jobs, especially if you are confident in your skills. However they are a good way to learn some new technical skills/tricks that you might not have picked up
+                in formal education. And for those of us who are new to web development in a professional environment they provide insite into what you need to learn.
                 </p><p> I will try to post more here as I apply for additional jobs and perhaps some 
-                interview questions later.
-                </p></div>
+                interview questions as they arrise.
+                </p></div></div>
                 <div class="pure-u-1 pure-u-md-1-5"></div>
 </div>
 
 <div class="pure-g">
-    <div class="pure-u-1 pure-u-md-2-5 qbox"><div id ="answere-text"><h3>What is the use of in_array() function in php?</h3><p>A1: The in_array() function is used to determine if a value is in an array. There is a simple example at <a href="https://www.w3schools.com/php/func_array_in_array.asp">w3shools</a> to illustrate this one. The output would return "Match found" as Glenn is in the array.</p></div></div>
+    <div class="pure-u-1 pure-u-md-2-5 qbox"><h3>1. What is the use of in_array() function in php?</h3><p>A1: The in_array() function is used to determine if a value is in an array. There is a simple example at <a href="https://www.w3schools.com/php/func_array_in_array.asp">w3shools</a> to illustrate this one. The output would return "Match found" as Glenn is in the array.</p></div>
     <div class="pure-u-1 pure-u-md-3-5 codebox"><script src="https://gist.github.com/pthsimon/a233dc7d1ed6a86f1dd2454deb6a8b58.js"></script></div>
 </div>
 
