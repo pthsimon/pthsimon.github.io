@@ -91,3 +91,7 @@ text-align: center;
     background:#651212;
     border-radius: 0.5em;
 }
+
+#home-page{
+    min-height:90vh;
+}
