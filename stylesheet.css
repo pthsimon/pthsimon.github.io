@@ -93,5 +93,20 @@ text-align: center;
 }
 
 #home-page{
+    width:100vw;
     min-height:90vh;
+   
 }
+
+.homeBox {
+    width: 100px;
+    height: 100px;
+    
+    background-color: #2D4671;
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+   /* background-image: url("DSC07525c.jpg");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
