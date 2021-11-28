@@ -268,59 +268,6 @@ drift.load('wmmtiu84ehmu');
 
 	
     </body>
-    <script type="text/javascript">
-	    function go(){
-            var nextColor = 0;
-            var colors = ["rgba(255, 204, 255, 0.20)", "rgba(102, 255, 255, 0.20)", "rgba(255, 255, 102, 0.20)", "rgba(80, 0, 187, 0.10)", "rgba(16, 255, 31, 0.10)"];
-            var boxes = document.getElementsByClassName('qbox');
-            var aBoxes = document.getElementsByClassName('codebox');
-            var hoBox = document.getElementsByClassName('homebox');
-        for(i = 0; i < boxes.length; i++) {
-            if(nextColor >= colors.length){
-                nextColor = 0;
-            }
-            boxes[i].style.backgroundColor = colors[nextColor];
-            aBoxes[i].style.backgroundColor = colors[nextColor];
-            hoBox[i].style.backgroundColor = colors[nextColor];
-            nextColor++;
-            
-           
-        }
-	    }
-    </script>
-    <script>
-	    function go2(){
-    var tiles = document.getElementsByClassName('homeBox');
-    var leftPos = 0;
-    totalSquares = 9;
-    tileIndex = 0;
-    horiDist = window.innerWidth / 2;
-    function runfast(){
-        if((tileIndex == 3 || tileIndex == 6) & leftPos == 0){
-            horiDist = window.innerWidth / 2;
-            leftPos = leftPos + 5; 
-           
-        } 
-        else if(leftPos <= horiDist && tileIndex < 9){
-            /* document.getElementsByClassName('homeBox').style.transform = "rotate(" + leftPos + "deg)";*/
-            tiles[tileIndex].style.left = leftPos + 'px';
-            leftPos = leftPos + 5; 
-            
-        }
-        else if(tileIndex < 9 && (leftPos >= horiDist)){
-            tileIndex++;
-            /* tiles[tileIndex].style.backgroundColor = "green"; */
-            leftPos = 0;
-            horiDist = horiDist - 100;
-        }
-       /*
-                     else {
-                         clearInterval(inex);        
-                        }       
-         */     
-
-    }
-            var inex = setInterval(runfast, 1);  
-	    }
-            </script>
+  
+         
 </html>
